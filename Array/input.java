@@ -1,5 +1,6 @@
 package Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class input {
@@ -18,8 +19,22 @@ public class input {
         }
 
         for(int i = 0; i<arr.length;i++){
-            System.out.println(arr[i]);
+            System.out.print(arr[i] + " ");
         }
+// for each loop
+        for(int num: arr){
+            System.out.print(num + " ");
+        }
+        //for(Type variable : collection/array){
+        // code
+        //}
 
+        //if index value is 4 and we try to access 7th index
+       // System.out.println(arr[7]); //ArrayIndexOutOfBoundsException
+
+       System.out.println(Arrays.toString(arr));
+       //.toString(arr) = array ke saare elements ko 
+       //ek readable string me convert karta hai
+       //Format: [element1, element2, element3, ...]
     }
 }
