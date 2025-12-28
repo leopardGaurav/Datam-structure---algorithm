@@ -1,2 +1,2 @@
-# Datam structure & algorithm
-all type of logical, striversheet problem , leetcode important question , and interviews question solving there.
+# DATA-STRUCTURE--ALGORITHM
+DSA practice repository with Java solutions for common algorithms and data structures problems. Includes arrays, strings, linked lists, trees, graphs, and more.
