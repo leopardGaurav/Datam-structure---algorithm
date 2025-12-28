@@ -1,4 +1,4 @@
-package linearsearch;
+
 public class searchinstring {
     public static void main(String[] args) {
         String name = "gaurav";
