@@ -1,33 +1,27 @@
-
-public class smallestletter {
+public class smallestLetter {
     public static void main(String[] args) {
-        int[] arr = {};
-        int target = 14;
-        int result = smallestletter(arr, target);
-         if (result != -1) {
-            System.out.println("Element found at index: " + result);
-        } else {
-            System.out.println("Element not found");
-        }
-    }
-    static int smallestletter(int[] arr, int target){
-        if (target > arr[arr.length - 1]){
-            return -1;
-        }
+        char[] arr = {'b','c','f','h'};
+        char target = 'a';
 
+        char result = nextGreatestLetter(arr, target);
+        System.out.println(result);
+    }
+
+    static char nextGreatestLetter(char[] arr, char target) {
         int start = 0;
         int end = arr.length - 1;
 
-        while(start<=end){
-            int mid = start + (end - start)/2;
-            if (target<arr[mid]){
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+
+            if (target < arr[mid]) {
                 end = mid - 1;
-            } else if(target > arr[mid]){
-                start = mid+1;
-            }else{
-                return mid;
+            } else {
+                start = mid + 1;
             }
         }
-        return start;
+
+        // wrap around case
+        return arr[start % arr.length];
     }
 }
